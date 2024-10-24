@@ -1,11 +1,17 @@
 package pe.edu.vallegrande.spring_reactive;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import lombok.extern.slf4j.Slf4j;
 
-@SpringBootApplication
-public class SpringReactiveApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(SpringReactiveApplication.class, args);
-    }
+@Slf4j
+@SpringBootTest
+class SpringReactiveApplicationTests {
+
+	@Test
+	void contextLoads() {
+	    log.info("default test");
+	}
+
+
 }
